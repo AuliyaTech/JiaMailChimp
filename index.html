@@ -2,6 +2,52 @@
 <style>
 	.contains-form{
 	background-color: #fff;}
+	.navigation{
+    height: auto;
+}
+.navbar { 
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    text-align: center;
+    align-content: center;
+    background-color: seashell;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+.mx-auto{
+    width: 100%;
+}
+.navbar-nav{
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    /* margin-right: auto;
+    margin-left: center; */
+
+}
+.logo{
+    height: 50px;
+    width: auto;
+}
+@media only screen and (max-width: 991px){
+    .logo{
+        visibility: hidden;
+    }
+}
+.nav-item {
+    /* margin-left: auto; 
+    margin-right: auto; */
+    height: 100%;
+    align-content: center;
+    text-align: center;
+    margin-top:12px ;
+    color: #000;
+}
+.nav-link, .logo{
+    margin-left: 9vw;
+
+}
 </style>
  <div className="navigation">
             <nav class="navbar navbar-expand-lg navbar-toggleable-md navbar-light bg-light">
@@ -19,7 +65,7 @@
                             <Link class="nav-link reg-txt" to="/testimonials">TESTIMONIALS</Link>
                         </li>
                         <li class="nav-item mx-auto logo">
-                           <Link to="/"><img className="logo" src={img} /></Link>
+                           <a href=""><img className="logo" src="https://reverent-tereshkova-d9f1bb.netlify.com/static/media/logo.d33ec1f1.png" /></a>
                         </li>
                         <li class="nav-item mx-auto">
                             <Link class="nav-link reg-txt" to="/location">LOCATIONS</Link>
